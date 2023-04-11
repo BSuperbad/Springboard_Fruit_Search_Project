@@ -1,0 +1,58 @@
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ffd500, #f26419);
+}
+
+:focus {
+  border: 2px solid #f26419;
+  border-bottom: 3px solid #f26419;
+  border-style: inset;
+  outline: 2px solid #fceade;
+}
+
+input {
+  background-color: #f7b538;
+  border: none;
+  border-bottom: 2px solid #f26419;
+  border-radius: 3px;
+}
+
+.search-container {
+  margin-top: 400px;
+}
+
+.search-container input,
+.search-container .suggestions {
+  width: 300px;
+  padding: 10px;
+  margin: 0;
+}
+
+.search-container .suggestions {
+  padding: 0;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 10px;
+  background-color: #f7b538;
+}
+
+ul li:hover {
+  background-color: #f26419;
+  cursor: pointer;
+}
+
+input:hover {
+  cursor: default;
+}
